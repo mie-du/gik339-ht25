@@ -21,4 +21,5 @@ function withTax(price) {
 }
 console.log(withTax(100));
 console.log(withTax(price));
+X;
 //console.log(price);
