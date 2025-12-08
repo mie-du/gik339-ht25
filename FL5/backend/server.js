@@ -39,5 +39,8 @@ server.get('/', (req, res) => {
 server.post('/greetings', (req, res) => {
   const db = new sqlite3.Database('./greetings.db');
   const body = req.body;
+  console.log(body);
   db.run('INSERT INTO greetings (message) VALUES (?)', [body.message]);
+  db.close();
+  res.send(JSON.stringify(body));
 });
