@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" />
+    <title>FL6 - CSS-ramverk - Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous" />
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header><h1>En sida som visar hälsningar</h1></header>
+    <main class="view" id="list">
+      <h2 class="page-title">Hälsningar</h2>
+      <section class="card" style="width: 18rem">
+        <img
+          src="https://placehold.co/286x180?text=Hälsning+1+bild"
+          alt="Placeholder-bild 1"
+          class="card-img-top" />
+        <div class="card-body">
+          <h3 class="card-title">Hälsning 1 titel</h3>
+          <p class="card-text">Hälsing 1</p>
+        </div>
+      </section>
+      <section class="card" style="width: 18rem">
+        <img
+          src="https://placehold.co/286x180?text=Hälsning+2+bild"
+          alt="Placeholder-bild 2"
+          class="card-img-top" />
+        <div class="card-body">
+          <h3 class="card-title">Hälsning 2 titel</h3>
+          <p class="card-text">Hälsing 2</p>
+        </div>
+      </section>
+    </main>
+    <main class="view" id="create">
+      <h2>Skapa ny hälsning</h2>
+      <form id="greetings">
+        <div class="mt-3">
+          <label class="form-label" for="message">Meddelande</label>
+          <input class="form-control" type="text" id="message" />
+        </div>
+        <button class="btn btn-primary" type="submit">Skicka</button>
+      </form>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
